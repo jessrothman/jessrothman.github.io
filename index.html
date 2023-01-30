@@ -8,13 +8,15 @@
 <!--4. Changed header bar navlink text-->
 <!--5. Changed header 1 and 2 text and added banner-->
 <!--6. Changed main button text-->
-<!--7. Added card to "General Info" section-->
-<!--8. Added resume and two examples of academic work to the "Resume and Work" section-->
+<!--7. Added card to "About Me" section with picture and information-->
+<!--8. Added accordion drop down menu in MLIS Portfolio section-->
 <!--9. Changed the asset images in "Resume and Work" section-->
-<!--10. Deleted email submission form from template-->
-<!--11. Deleted social media link buttons from template-->
+<!--10. Removed email submission form from template-->
+<!--11. Removed social media link buttons from template-->
 <!--12. Changed copyright to feature my name-->
-<!--13. Changed address box to feature my internship location, the email to my own, and phone number to my work number-->
+<!--13. Changed email box to feature my own email address and adjusted size and placement on site-->
+<!--14. Added image carousel to Visual Work Examples section-->
+<!--15. Added alt text to all images-->
 
     <head>
         <meta charset="utf-8" />
@@ -56,7 +58,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Jessica Rothman</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Museum Enthusiast • Aspiring Archivist</h2>
-                        <img src="https://i.imgur.com/go8BK4n.png">
+                        <img src="https://i.imgur.com/go8BK4n.png" alt="A transparent ornate laurel banner.">
                         <br><br><a class="btn btn-primary" href="#aboutme">Begin</a>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
                         <div class="col-lg-8">
                             <h2 class="text-white mb-4">About Me</h2>
                             <p class="text-white-50">
-      <img src="https://i.imgur.com/io7dz3i.jpg" alt="..." width="400" align="right"></p>
+      <img src="https://i.imgur.com/io7dz3i.jpg" alt="A portrait of a women with glasses, black hair, and multicolored bangs." width="400" align="right"></p>
       <div class="text-white mb-4">
                   Hello! My name is Jess Rothman and I'm currently an MLIS graduate student at the University of Denver (about to graduate, woo!). My career interests lie in archiving and I'm especially interested in museum and historical collections. In my spare time, I like to game, craft, sew, and enjoy the beautiful Colorado outdoors! Thank you for stopping by!
                     </div>
@@ -82,7 +84,7 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/mountain-view.JPG" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/mountain-view.JPG" alt="A photograph of a black-haired woman sitting away from the camera and gazing out at a mountain landscape." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Professional Resume</h4>
@@ -91,10 +93,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/DU_Zoom_mediaBG03.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
+            <!--Project One Row-->
+            <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/DU_Zoom_mediaBG03.jpg" alt="A photograph of the University of Denver overlayed with a red filter and the school logo in the upper left corner." /></div>
+                    <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -197,7 +199,7 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/university-of-denver.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/university-of-denver.jpg" alt="An aerial view of the University of Denver campus." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -211,13 +213,13 @@
                                         </div>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="assets/img/BlattCasillasDadismanHicksJohnson_IALPoster.png" class="d-block w-100" alt="...">
+                                            <img src="assets/img/BlattCasillasDadismanHicksJohnson_IALPoster.png" class="d-block w-100" alt="An informational poster titled Indigenous Alaska Languages. The poster outlines a digital collection of linguistic items pertaining to the numerous indigenous languages present in Alaska.">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="assets/img/Night at the Museum Flyer.png" class="d-block w-100" alt="...">
+                                            <img src="assets/img/Night at the Museum Flyer.png" class="d-block w-100" alt="A flyer advertising a hypothetical Night at the Museum event at the Carnegie Museum of Natural History in Pittsburgh, Pennsylvania.">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="assets/img/DadismanJessica_FieldStudyMarketingSummary.png" class="d-block w-100" alt="...">
+                                            <img src="assets/img/DadismanJessica_FieldStudyMarketingSummary.png" class="d-block w-100" alt="A promotional poster for the Denver Museum of Nature and Science archival collections.">
                                           </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
