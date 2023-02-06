@@ -3,7 +3,7 @@
 <body>
 
 <h1>Charts</h1>
-<p>Below are a few charts I've made to demonstrate some personal data!</p>
+<p>Below are two charts I've made to demonstrate some personal data!</p>
 
 <p><h2>Pie Chart:</h2></p>
 <p>This chart breaks down my musical preferences based on genre.</p>
@@ -40,6 +40,38 @@ new Chart("musicChart", {
   }
 });
 </script></p>
+
+<p><h2>Bar Graph:</h2></p>
+<p>This chart illustrates the number of different clothing items I've made by hand.</p>
+
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <body>
+  
+  <canvas id="sewingChart" style="width:100%;max-width:600px"></canvas>
+  
+  <script>
+  var xValues = ["Shirts", "Pants", "Skirts", "Dresses", "Belts"];
+  var yValues = [4, 2, 3, 2, 3];
+  var barColors = ["red", "green","blue","orange","brown"];
+  
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "Clothing I've Made By Hand"
+      }
+    }
+  });
+  </script></p>
 
 </body>
 </html>
