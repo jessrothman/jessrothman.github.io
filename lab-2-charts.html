@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Charts</h1>
+<p>Below are a few charts I've made to demonstrate some personal data!</p>
+
+<p><h2>Pie Chart:</h2></p>
+<p>This chart breaks down my musical preferences based on genre.</p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="musicChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Metal", "Pop", "Rap", "Showtunes", "Video Game OSTs"];
+var yValues = [50, 10, 10, 10, 20];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("musicChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "My Music Preferences"
+    }
+  }
+});
+</script></p>
+
+</body>
+</html>
