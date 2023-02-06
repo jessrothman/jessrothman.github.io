@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<div class="container">
+
 <h1>Accessibility Testing on Jefferson County Public Library Website</h1>
 
 <p><b>Name:</b> Jessica Rothman
@@ -13,7 +13,7 @@
 
 <p><h2>Website Page Title</h2></p>
 <p>In the web page markup, the < title > is within the < head > tag. Good page titles are particularly important for orientation, they help people know where they are and move between pages open in their browser tab. The first thing screen readers say when the user goes to a different web page is the page title.</p>
-<p class="alert alert-success" role="alert"><b>Results:</b> Good. Most pages had clear, descriptive HTML title values that included the main website title. However, for pages with multiple headings, it is noted that the title only describes the overall subpage. For example, when clicking the "Book a Librarian" link (which is part of the "Contact Us" page) the title reads "Contact Us" but does not let the reader know that they are at the section of the page that allows you to book a librarian.</p>
+<p><b>Results:</b> Good. Most pages had clear, descriptive HTML title values that included the main website title. However, for pages with multiple headings, it is noted that the title only describes the overall subpage. For example, when clicking the "Book a Librarian" link (which is part of the "Contact Us" page) the title reads "Contact Us" but does not let the reader know that they are at the section of the page that allows you to book a librarian.</p>
 
 <p><h2>Image Text Alternatives</h2></p>
 <p>Image text alternatives ("alt text") (pictures, illustrations, charts, etc.) Text alternatives convey the purpose of an image, including pictures, illustrations, charts, etc. Text alternatives are used by people who do not see the image.</p>
@@ -21,8 +21,8 @@
 
 <p><h2>Text</h2></p>
 <p>Headings, Contrast Ratio ("color contrast") and Resizing Text should not only support visual aesthetics but also support the navigation and visibility of text content.</p>
-<p><b>Headings Results:</b> Good. Some pages were missing an &lt;h1&gt; element, but still maintained a meaningful hierarchy amongst the headings that were there.
-<p><b>Contrast Ratio Results:</b> Excellent. WAVE was used to determine contrast ratio. This webpage has a contrast ratio of 8:59:1 and mostly utilizes a white background with black text, or, if using a color background, it is dark with white text.</p>
+<p><b>Headings Results:</b> Fair. The h1 headers are found halfway down the page in most cases. It is recommended they are placed above all of the navigation options.
+<p><b>Contrast Ratio Results:</b> Good. WAVE was used to determine contrast ratio. This webpage has a contrast ratio of 8:59:1 and mostly utilizes a white background with black text, or, if using a color background, it is dark with white text. However, the alert bar toward the top of the page failed the contrast test due to the white on red combination.</p>
 <p><b>Resizing Text Results:</b> Fair. All text does enlarge when you zoom, but requires horizontal scrolling to view all of it. It is recommended for text to shift to a "mobile-friendly" view when magnified for ease of reading.</p>
 
 <p><h2>Interaction</h2></p>
@@ -46,6 +46,6 @@
   <li><a href=https://www.w3.org/WAI/>The W3C Web Accessibility Initiative (WAI)</a></li>
   <li><a href=https://www.w3schools.com/accessibility/>W3 Schools Accessibility Tutorial</a></li>
   <li><a href=https://adata.org/ocr-videos>OCR Video Series on Web Accessbility</a></li>
-</ul></p></div>
+</ul></p>
 </body>
 </html>
